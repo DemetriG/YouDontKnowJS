@@ -1,2 +1,2 @@
-# YouDontKnowJS
-You Don't Know JS: Up &amp; Going - Chapter 1
+# You Don't Know JS
+You Don't Know JS
