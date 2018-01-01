@@ -1,0 +1,26 @@
+purchaseAmount = 0.00;
+
+myBankAccount = prompt ("Please insert your bank amount: ");
+
+const TAX = 0.5;
+const PHONE_PRICE = 99.99; 
+const ACCESSORY_PRICE = 9.99;
+const SPENDING_THRESHOLD = 400;
+
+function calculatingTax( price, tax ){
+    return priceTax = (tax/100) * price + price; 
+}
+
+phonePriceWithTax = calculatingTax( PHONE_PRICE, TAX );
+accessoryPriceWithTax = calculatingTax( ACCESSORY_PRICE, TAX );
+
+purchaseAmount = phonePriceWithTax + accessoryPriceWithTax;
+
+while ( purchaseAmount < SPENDING_THRESHOLD && myBankAccount > SPENDING_THRESHOLD ) {
+    myBankAccount = myBankAccount - purchaseAmount;
+    if ( myBankAccount < SPENDING_THRESHOLD ) {
+        break;
+    }
+}
+
+console.log( "You have purchased $"+purchaseAmount.toFixed(2),"of items." );
